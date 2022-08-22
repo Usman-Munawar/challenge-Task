@@ -1,0 +1,130 @@
+.App {
+    width: 100%;
+    height: 100%;
+}
+#light.App{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(200, 15%, 8%);
+}
+#dark.App{
+    background-color: hsl(207, 26%, 17%);
+    color: hsl(0, 0%, 100%);
+}
+#light a{
+    color: hsl(200, 15%, 8%);
+}
+#dark a{
+    color: hsl(0, 0%, 100%);
+}
+#dark input, #dark select{
+    background-color: hsl(209, 23%, 22%);
+    color:hsl(0, 0%, 100%) ;
+}
+.form-control{
+    border: none;
+  }
+.form-control:focus {
+    border: none;
+    box-shadow:
+		/* offset-x | offset-y | blur-radius | spread-radius | color */
+		0px 3px 4px 0px hsla(0,0%,0%,0.14), 
+		0px 3px 3px -2px hsla(0,0%,0%,0.12), 
+		0px 1px 8px 0px hsla(0,0%,0%,0.2);
+  }
+.header {
+    padding: 20px;
+    box-shadow:
+		/* offset-x | offset-y | blur-radius | spread-radius | color */
+		0px 3px 4px 0px hsla(0,0%,0%,0.14), 
+		0px 3px 3px -2px hsla(0,0%,0%,0.12), 
+		0px 1px 8px 0px hsla(0,0%,0%,0.2);
+}
+.header .title{
+    font-size: 22px;
+    font-weight: 700;
+}
+.header .dark-mode-button{
+    float: right;
+    cursor: pointer;
+}
+.container-fluid{
+    padding: 20px;
+}
+.link-style{
+    text-decoration: none !important;
+}
+.box-shadow{
+    background-color: hsla(0, 100%, 100%, 0.08);
+	box-shadow:
+		/* offset-x | offset-y | blur-radius | spread-radius | color */
+		0px 3px 4px 0px hsla(0,0%,0%,0.14), 
+		0px 3px 3px -2px hsla(0,0%,0%,0.12), 
+		0px 1px 8px 0px hsla(0,0%,0%,0.2);
+}
+.box{
+    border-radius: 5px;
+    margin: 15px 0;
+}
+.box img {
+    width: 100%;
+    height: 140px;
+}
+.box .box-text{
+    padding: 16px;
+}
+.box .box-text p, .detail p{
+    margin: 0;
+    font-weight: 500;
+}
+.box .box-text p span, .detail span{
+    font-weight: normal;
+}
+.select-style {
+    width: 180px;
+}
+.form-control:focus {
+    outline: 0;
+}
+.border-box{
+    padding: 8px 16px;
+    margin: 4px 6px;
+    display: inline-block;
+    text-decoration: none;
+}
+.detail-title-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+.detail-img{
+    width: 100%;
+    height: 310px;
+}
+.col-sm-6{
+    margin-bottom: 20px;
+}
+.back-btn {
+    padding: 4px 20px;
+    text-decoration: none !important;
+    color: black;
+}
+.p-right{
+    padding-right: 30px;
+}
+.p-left{
+    padding-left: 30px;
+}
+@media only screen and (max-width: 600px) {
+    .box img {
+        height: auto;
+    }
+    .detail-img{
+        height: auto;
+    }
+    .p-right{
+        padding-right: 15px;
+    }
+    .p-left{
+        padding-left: 15px;
+    }
+  }
