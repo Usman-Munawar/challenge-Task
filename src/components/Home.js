@@ -4,16 +4,10 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 function Home() {
+    // variables
     const [countriesData, setCountriesData] = useState([]);
     const [searchRegion, setSearchRegion] = useState();
     const [searchCountry, setSearchCountry] = useState();
-
-    const [theme, setTheme] = useState('white');
-
-//   var changeTheme = (theme) => {
-//     setTheme((theme == 'white') ? 'dark':'white');
-//     console.log(theme)
-//   }
 
     useEffect(() => {
         loadData();
@@ -45,7 +39,6 @@ function Home() {
         }
         data = await data.json();
         setCountriesData(data);
-        console.log(data);
     };
     return (
         <div>
